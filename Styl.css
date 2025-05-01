@@ -126,6 +126,18 @@ h1, h2 {
   border-radius: 3px;
 }
 
+.image-group img.main-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+  border-color: #666;
+}
+
+.sub-gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+  border-color: #666;
+}
+
 .footer {
   text-align: center;
   font-size: 18px;
