@@ -3,7 +3,6 @@
       padding: 0;
       font-family: sans-serif;
       background-image: linear-gradient(to bottom, black, rgba(128,128,128,0.2), black);
-      color: white;
       overflow-x: hidden;
       min-height: 100vh;
       display: flex;
