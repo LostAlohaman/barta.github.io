@@ -3,6 +3,7 @@
       font-family: sans-serif;
       background: linear-gradient(to bottom, black, rgba(128,128,128,0.2), black);
       color: white;
+      overflow-x: hidden;
     }
 
     .sidebar {
