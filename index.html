@@ -144,6 +144,10 @@
   <a href="https://www.instagram.com/lost_alohaman" target="_blank">Instagram</a>
 </div>
 
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged image">
+</div>
+ 
 <script>
   function toggleSubGallery(mainImg) {
     const group = mainImg.closest(".image-group");
@@ -153,6 +157,17 @@
     });
     subGallery.style.display = (subGallery.style.display === "flex") ? "none" : "flex";
   }
+
+ function enlargeImage(src) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  lightboxImg.src = src;
+  lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
 </script>
 
 </body>
