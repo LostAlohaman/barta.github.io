@@ -75,7 +75,6 @@ h1, h2 {
   width: 200px;
   height: auto;
   object-fit: cover;
-  border: 2px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
 }
