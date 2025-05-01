@@ -6,79 +6,56 @@
   <link rel="stylesheet" href="Styl.css"
 </head>
 <body>
-
+  
   <div class="sidebar">
     <a href="#warhammer_40k">Warhammer 40k</a>
     <a href="#battle_tech">Battle Tech</a>
     <a href="#busts">Busts</a>
     <a href="#misc">Misc</a>
   </div>
-
+  
   <div class="container">
     <h1>Photo Album</h1>
-
+    
     <div class="section" id="warhammer_40k">
       <h2>Warhammer 40k Collection</h2>
-      <div class="gallery">
-        <img src="Fotky/40k_1.jpg" alt="40k 1">
-        <img src="Fotky/40k_2.jpg" alt="40k 2">
-        <img src="Fotky/40k_3.jpg" alt="40k 3">
-        <img src="Fotky/40k_4.jpg" alt="40k 4">
-      </div>
-    </div>
+        <div class="gallery">
+          <img src="Fotky/40k_1.jpg" alt="40k 1">
+          <img src="Fotky/40k_2.jpg" alt="40k 2">
+          <img src="Fotky/40k_3.jpg" alt="40k 3">
+          <img src="Fotky/40k_4.jpg" alt="40k 4">
+        </div>
+       </div>
 
     <div class="section" id="battle_tech">
       <h2>Battle Tech Collection</h2>
-      <div class="gallery">
-        <img src="Fotky/bt_1.jpg" alt="bt 1">
-        <img src="Fotky/bt_2.jpg" alt="bt 2">
-        <img src="Fotky/bt_3.jpg" alt="bt 3">
-      </div>
+        <div class="gallery">
+          <img src="Fotky/bt_1.jpg" alt="bt 1">
+          <img src="Fotky/bt_2.jpg" alt="bt 2">
+          <img src="Fotky/bt_3.jpg" alt="bt 3">
+        </div>
     </div>
 
-    <div class="section" id="busts">
+    <div class="section" id="busts">        
       <h2>Busts Collection</h2>
-      <div class="gallery">
-        <img src="Fotky/b_1.jpg" alt="bu 1">
-        <img src="Fotky/b_2.jpg" alt="bu 2">
-        <img src="Fotky/b_3.jpg" alt="ub 3">
-      </div>
+        <div class="gallery">
+          <img src="Fotky/b_1.jpg" alt="bu 1">
+          <img src="Fotky/b_2.jpg" alt="bu 2">
+          <img src="Fotky/b_3.jpg" alt="ub 3">
+        </div>
     </div>
 
-    <div class="section" id="misc">
+    <div class="section" id="misc">      
       <h2>Misc Collection</h2>
-      <div class="gallery">
-        <img src="Fotky/m_1.jpg" alt="mi 1">
-      </div>
+        <div class="gallery">
+          <img src="Fotky/m_1.jpg" alt="mi 1">
+        </div>
     </div>
   </div>
 
   <div class="footer">
     <a href="https://www.instagram.com/lost_alohaman" target="_blank">Instagram</a>
   </div>
-
-  <!-- Modal for image zoom -->
-  <div class="modal" id="imageModal">
-    <img id="modalImage" src="" alt="">
-  </div>
-
-  <script>
-    const images = document.querySelectorAll('.gallery img');
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-
-    images.forEach(img => {
-      img.addEventListener('click', () => {
-        modal.style.display = 'flex';
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-      });
-    });
-
-    modal.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
-  </script>
 
 </body>
 </html>
