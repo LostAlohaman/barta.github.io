@@ -20,8 +20,6 @@
 
 <div class="section" id="warhammer_40k">
   <h2>Warhammer 40k Collection</h2>
-  <div class="scroll-container">
-    <button class="scroll-btn left" onclick="scrollGallery('left')">&#9664;</button>
     <div class="gallery" id="warhammerGallery">
       <div class="image-group">
         <img src="Fotky/40k_1.jpg" alt="40k 1" class="main-img" onclick="toggleSubGallery(this)">
@@ -61,7 +59,6 @@
         </div>
       </div>
     </div>
-    <button class="scroll-btn right" onclick="scrollGallery('right')">&#9654;</button>
   </div>
 </div>
 
@@ -148,15 +145,6 @@
 </div>
 
 <script>
-  function scrollGallery(direction) {
-    const gallery = document.getElementById('warhammerGallery');
-    const scrollAmount = 320;
-    if (direction === 'left') {
-      gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    } else {
-      gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  }
   function toggleSubGallery(mainImg) {
     const group = mainImg.closest(".image-group");
     const subGallery = group.querySelector(".sub-gallery");
