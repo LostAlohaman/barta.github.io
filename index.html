@@ -18,15 +18,19 @@
   <div class="container">
     <h1>Photo Album</h1>
 
-    <div class="section" id="warhammer_40k">
-      <h2>Warhammer 40k Collection</h2>
-        <div class="gallery">
-          <img src="Fotky/40k_1.jpg" alt="40k 1">
-          <img src="Fotky/40k_2.jpg" alt="40k 2">
-          <img src="Fotky/40k_3.jpg" alt="40k 3">
-          <img src="Fotky/40k_4.jpg" alt="40k 4">
-        </div>
+   <div class="section" id="warhammer_40k">
+       <h2>Warhammer 40k Collection</h2>
+        <div class="scroll-container">
+         <button class="scroll-btn left" onclick="scrollGallery('left')">&#9664;</button>
+          <div class="gallery">
+           <img src="Fotky/40k_1.jpg" alt="40k 1" onclick="openModal(this)">
+           <img src="Fotky/40k_2.jpg" alt="40k 2" onclick="openModal(this)">
+           <img src="Fotky/40k_3.jpg" alt="40k 3" onclick="openModal(this)">
+           <img src="Fotky/40k_4.jpg" alt="40k 4" onclick="openModal(this)">
+         </div>
+        <button class="scroll-btn right" onclick="scrollGallery('right')">&#9654;</button>
        </div>
+    </div>
 
     <div class="section" id="battle_tech">
       <h2>Battle Tech Collection</h2>
