@@ -44,7 +44,6 @@
       text-align: center;
     }
 
-    /* Horizontal scrolling */
     .gallery {
       display: flex;
       overflow-x: auto;
