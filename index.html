@@ -62,5 +62,17 @@
     <a href="https://www.instagram.com/lost_alohaman" target="_blank">Instagram</a>
   </div>
 
+<script>
+  function scrollGallery(direction) {
+    const gallery = document.getElementById('warhammerGallery');
+    const scrollAmount = 320; // One image width + gap
+    if (direction === 'left') {
+      gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  }
+</script>
+ 
 </body>
 </html>
