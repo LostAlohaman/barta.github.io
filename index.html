@@ -65,13 +65,21 @@
 <script>
   function scrollGallery(direction) {
     const gallery = document.getElementById('warhammerGallery');
-    const scrollAmount = 320; // One image width + gap
+    const scrollAmount = 320;
     if (direction === 'left') {
       gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     } else {
       gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   }
+  function toggleSubGallery(mainImg) {
+    const group = mainImg.closest(".image-group");
+    const subGallery = group.querySelector(".sub-gallery");
+    document.querySelectorAll(".sub-gallery").forEach(g => {
+      if (g !== subGallery) g.style.display = "none";
+    });
+    subGallery.style.display = (subGallery.style.display === "flex") ? "none" : "flex";
+     }
 </script>
  
 </body>
