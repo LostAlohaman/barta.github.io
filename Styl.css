@@ -1,4 +1,4 @@
-html, body {
+     .body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
@@ -52,7 +52,7 @@ html, body {
       max-width: 1000px;
     }
 
-    h1, h2 {
+    .h1, h2 {
       text-align: center;
     }
 
@@ -105,12 +105,12 @@ html, body {
       text-decoration: underline;
     }
 
-    details summary {
+    .details summary {
       font-size: 1.3em;
       cursor: pointer;
       padding: 10px 0;
     }
 
-    details[open] summary {
+    .details[open] summary {
       font-weight: bold;
     }
